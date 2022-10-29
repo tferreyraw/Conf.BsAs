@@ -93,23 +93,23 @@
         <div class="col-md-6">
           <label for="categoria" class="form-label">Categoria</label>
           <select class="form-select" id="categoria" >
-            <option selected value="1" id="estudiante">Estudiante</option>
-            <option value="2" id="trainee">Trainee</option>
-            <option value="3" id="junior">Junior</option>
+            <option selected value="estudiante" id="estudiante">Estudiante</option>
+            <option  value="trainee" id="trainee">Trainee</option>
+            <option value="junior" id="junior">Junior</option>
           </select>
         </div>
 
 
         <div class="col-12 pt-4 pb-4">
-          <p id="total" class="text-primary bg-primary bg-opacity-25 p-3 rounded">Total a pagar:<b> $</b></p>
+          <p class="text-primary bg-primary bg-opacity-25 p-3 rounded">Total a pagar:$<b id="total" ></b></p>
         </div>
 
 
         <div class="d-grid gap-2 col-6 mx-auto">
-          <button class="btn btn-success" id="button-borrfr" type="reset">Borrar</button>
+          <button class="btn btn-success" id="borrar" type="reset">Borrar</button>
         </div>
         <div class="d-grid gap-2 col-6 mx-auto">
-          <button class="btn btn-success" id="button-resumen" type="submit">Resumen</button>
+          <button class="btn btn-success" id="resumen" type="button">Resumen</button>
         </div>
 
       </form>
