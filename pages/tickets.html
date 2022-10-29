@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP integrador JS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../images/codoacodo.png" alt="Logo" width="90"  class="d-inline-block align-text-center">Conf Bs As</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#">La conferencia</a>
+          <a class="nav-link" href="#">Los Oradores</a>
+          <a class="nav-link" href="#">El lugar y la fecha</a>
+          <a class="nav-link active" href="#">Conviértete en orador</a>
+          <a class="nav-link text-success" href="#" id="tickets" >Comprar tickets</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--FIN DE NAVBAR-->
+
+
+
+  <!--COMIENZO DE LAS CARDSL-->
+  <div class="container g-0 p-2">
+    <div class="card-group text-center mt-3 gap-2">
+      <div class="card border border-primary">
+        <div class="card-body">
+          <h5 class="card-title"><b>Estudiante</b></h5>
+          <p class="card-text">Tienen un descuento</p>
+          <p><b>80%</b></p>
+          <p class="text-secondary">* presentar documentacion</p>
+        </div>
+        
+      </div>
+      <div class="card border border-info">
+        <div class="card-body">
+          <h5 class="card-title"><b>Trainee</b></h5>
+          <p class="card-text">Tienen un descuento</p>
+          <p><b>50%</b></p>
+          <p class="text-secondary">* presentar documentacion</p>
+        </div>
+        
+      </div>
+      <div class="card border border-warning">
+        <div class="card-body">
+          <h5 class="card-title"><b>Junior</b></h5>
+          <p class="card-text">Tienen un descuento</p>
+          <p><b>15%</b></p>
+          <p class="text-secondary">* presentar documentacion</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--FIN DE LAS CARDS-->
+  
+  <!--INICIO DE FORMULARIO-->
+  <div class="container justify-content-center mt-3 mb-3">
+    <div class="forms-inicio">
+      <h6 class="text-center">VENTA</h6>
+      <h3 class="text-center">VALOR DEL TICKET 200$</h3>
+    </div>
+
+    
+      <form class="row g-3">
+        <div class="col-md-6">
+          <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" id="apellido" class="form-control" placeholder="Apellido" required>
+        </div>
+        
+        <div class="col-12">
+          <input type="email" id="email" class="form-control"  placeholder="Correo" required>
+        </div>
+
+        <div class="col-md-6">
+          <label  for="cantidad" class="form-label">Cantidad</label>
+          <input type="number" id="cantidad" class="form-control" placeholder="Cantidad" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="categoria" class="form-label">Categoria</label>
+          <select class="form-select" id="categoria" >
+            <option selected value="1" id="estudiante">Estudiante</option>
+            <option value="2" id="trainee">Trainee</option>
+            <option value="3" id="junior">Junior</option>
+          </select>
+        </div>
+
+
+        <div class="col-12 pt-4 pb-4">
+          <p id="total" class="text-primary bg-primary bg-opacity-25 p-3 rounded">Total a pagar:<b> $</b></p>
+        </div>
+
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-success" id="button-borrfr" type="reset">Borrar</button>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-success" id="button-resumen" type="submit">Resumen</button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <!--FIN DE FORMULARIO-->
+
+  <!--COMIENZO DE FOOTER-->
+    <ul class="nav justify-content-center bg-primary text-white p-3">
+      <li class="nav-item">
+        <a class="nav-link text-white" aria-current="page" href="#">Preguntas <br>Frecuentes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Contactanos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Prensa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white">Conferencias</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white">Terminos y <br>condiciones</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white">Privacidad</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white">Estudiantes</a>
+      </li>
+    </ul>
+  
+  <!--FIN DE FOOTER-->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./tickets.js"></script>
+</body>
+</html>
